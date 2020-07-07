@@ -1,0 +1,30 @@
+{
+  "name": "spacex",
+  "version": "0.0.1",
+  "description": "This project is a test to get a position in YEMA team",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jmiguelgg/SpaceXTest.git"
+  },
+  "keywords": [
+    "SpaceX",
+    "YEMA",
+    "test",
+    "skills"
+  ],
+  "author": "José Miguel Gutiérrez Guevara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmiguelgg/SpaceXTest/issues"
+  },
+  "homepage": "https://github.com/jmiguelgg/SpaceXTest#readme",
+  "dependencies": {
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
