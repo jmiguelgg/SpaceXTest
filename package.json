@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/jmiguelgg/SpaceXTest#readme",
   "dependencies": {
+    "graphql": "^15.3.0",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
