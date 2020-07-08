@@ -6,19 +6,25 @@ const GET_LAUNCHES = gql`
         launchesPast(limit: 10) {
             mission_name
             launch_date_local
-            launch_success
             links {
+                article_link
+                video_link
                 flickr_images
-                wikipedia
             }
+            launch_date_utc
         }
     }
 `
 
 const Index = (pops) => {
     const {loading, error, data} = useQuery(GET_LAUNCHES)
+    if(loading) return <p>Esta cargando ...</p>
+    if(error) return <p>Ha ocurrido un error...</p>
+    console.log(data)
     return(
-        <h1>This is the new homepage</h1>
+        <div>
+            <h1>This is the new homepage</h1>
+        </div>
     )
 }
 
