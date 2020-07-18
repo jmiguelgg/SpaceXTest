@@ -20,18 +20,18 @@ const GET_LAUNCHES = gql`
 const Index = (props) => {
     const {loading, error, data} = useQuery(GET_LAUNCHES)
     if(loading) return <p>Esta cargando ...</p>
-    if(error) return(<p>Ha ocurrido un error...</p>)
-    try {
-        return(
-            <Card info={data.launchesPast[0]}/>
-        )
-    } catch (error) {
-        return <p>Ha ocurrido un error...</p>
-    } finally{
-        return(
-            <p>Cargo bien la pagina{console.log(props.data)}</p>
-        )
-    }
+    if(error) return(
+        <div>
+            <p>Ha ocurrido un error...</p>
+            {console.log(error)}
+        </div>
+    )
+    if(data) return(
+        <div>
+            {console.log(data.launchesPast)}
+            <p>Los datos ya llegaron</p>
+        </div>
+    )
 }
 
 
